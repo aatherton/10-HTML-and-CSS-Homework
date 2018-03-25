@@ -1,0 +1,27 @@
+{% extends "global.html" %}
+{% block title %}complete data{% endblock %}
+{% block main %}
+	<div class = "container my-2">
+		<div class = "card bg-secondary">
+			<div class = "card-header">Complete data used for this project</div>
+			<div class = "card-body">
+				<table class="table table-dark table-striped table-bordered table-hover">
+					<thead>
+						<tr>
+							{% for each in head %}
+								<th scope="col">{{ each }}</th>
+							{% endfor %}
+						</tr>
+						{% for other in body %}
+							<tr>
+								{% for each in other %}
+									<td>{{ each }}</td>
+								{% endfor %}
+							</tr>
+						{% endfor %}
+					</thead>
+				</table>
+			</div>
+		</div>
+	</div>
+{% endblock %}

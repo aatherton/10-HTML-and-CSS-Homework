@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- title block -->
+		<title>
+			{% block title %}untitled{% endblock %}
+		</title>
+		<!-- import bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		crossorigin="anonymous">
+		<!-- import bootswatch -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/spacelab/bootstrap.min.css">
+		<!-- import Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+		{% block css %}	
+		{% endblock %}
+	</head>
+
+	<body class = "bg-dark text-light">
+		<header>
+			<div class = "container my-2">
+ 				<nav class = "navbar navbar-expand-md navbar-dark bg-secondary">
+					<a class = "navbar-brand w-100 order-1"><i class="fab fa-python"></i> my brand!</a>
+					<div class="navbar-expand expand w-100 order-2">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="/">Home</a>
+							</li>
+							<li class = "nav-item">
+								<a class = "nav-link" href = "/data">Data</a>
+							</li>
+							<li class = "nav-item">
+								<a class = "nav-link" href = "/comparison">Comparison</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Graphs
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								{% for each in FIGLIST %}
+									<a class="dropdown-item" href="/plots/{{each.name}}">{{each.name}}</a>
+								{% endfor %}
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main>
+			{% block main %}<p>no content here</p>{% endblock %}
+		</main>
+		<footer>
+			<div class = "container my-2">
+				<div class = "navbar navbar-dark navbar-fixed-bottom bg-secondary">
+					<span class = "navbar-text">something something copyright <i class="far fa-copyright"></i> look, I'm busy, ok?</span>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

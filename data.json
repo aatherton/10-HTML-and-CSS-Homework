@@ -1,0 +1,26 @@
+[
+	{
+		"name" : "Temperature",
+		"title" : "Latitude vs. Max Temperature",
+		"img" : "Fig1.png",
+		"text" : "Praesent tincidunt rhoncus sem, in sagittis ex finibus et. Curabitur diam velit, rhoncus a tincidunt ac, ornare vitae nisi. Nulla pulvinar vestibulum suscipit. Quisque vehicula ligula quis magna faucibus, id rutrum mauris ultrices. Nulla facilisi. Nullam cursus justo ut tortor rutrum feugiat. Maecenas elementum felis interdum ante tincidunt luctus. Morbi suscipit sem quis interdum pretium. Nam elementum nec quam sed lacinia. Maecenas porta, nulla sit amet varius euismod, tellus sem molestie lacus, in sagittis dui metus ut libero. Fusce magna odio, placerat at rutrum id, pretium nec ipsum. Nunc risus magna, ultrices sed tincidunt quis, blandit at tortor. Fusce vitae iaculis diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam fermentum imperdiet purus sit amet semper."
+	},
+	{
+		"name" : "Humidity",
+		"title" : "Latitude vs. Humidity",
+		"img" : "Fig2.png",
+		"text" : "Praesent at lorem quis lectus porttitor hendrerit. Vivamus vehicula ullamcorper orci, efficitur laoreet mauris lobortis ut. Sed vulputate condimentum lorem ut accumsan. Duis ut enim dapibus, vestibulum diam non, faucibus mi. Integer mollis malesuada ultricies. Nulla tincidunt egestas dolor, in sagittis orci. Nulla ultrices, urna sed egestas tempor, ligula odio commodo diam, ullamcorper scelerisque augue odio ac nulla."
+	},
+	{
+		"name" : "Cloudiness",
+		"title" : "Latitude vs. Cloudiness",
+		"img" : "Fig3.png",
+		"text" : "Maecenas ut diam et sem vulputate dapibus nec ac mauris. Curabitur non nibh tempus, lacinia urna nec, rhoncus ipsum. Fusce lacinia nisl eu lectus auctor elementum. Duis pulvinar eget sapien vitae pretium. Nunc ut sapien in ligula volutpat varius. In ex lectus, bibendum vitae vulputate ut, bibendum sed elit. Phasellus congue tempus magna, vitae venenatis libero varius id. Sed ligula enim, consequat et lobortis ut, suscipit fermentum ipsum. Aliquam erat volutpat. Etiam in egestas nulla."
+	},
+	{
+		"name" : "Wind Speed",
+		"title" : "Latitude vs. Wind Speed",
+		"img" : "Fig4.png",
+		"text" : "Etiam urna lacus, convallis quis erat quis, elementum gravida elit. Pellentesque porttitor tellus ut dictum faucibus. Suspendisse interdum nunc eget erat rhoncus, a egestas dui auctor. Aenean elit sapien, facilisis ac enim vitae, hendrerit gravida enim. Suspendisse bibendum at enim at sodales. Fusce congue velit congue, tempor ligula eu, consequat nisl. Praesent placerat venenatis malesuada. In eu tincidunt nisi, vel posuere ex. Donec sit amet diam varius, accumsan sem at, sagittis nisl. Nulla hendrerit fermentum vulputate. Cras sem leo, egestas fringilla gravida quis, congue vitae arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur augue lacus, malesuada sit amet scelerisque ac, facilisis eu nibh. Phasellus quis felis quis metus facilisis gravida quis ut lectus."
+	}
+]

@@ -1,0 +1,14 @@
+{% extends "with_vizbar.html" %}
+{% block title %}homepage{% endblock %}
+{% block column %}
+	<div class="card text-white bg-dark">
+		<div class="card-header">Summary:</div>
+		<div class="card-body">
+			<img
+				src = {{url_for("static", filename = FIGLIST[0].img)}}
+				width = "30%"
+			/>
+			{{text|safe}}
+		</div>
+	</div>
+{% endblock %}

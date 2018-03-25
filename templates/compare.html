@@ -1,0 +1,31 @@
+{% extends "global.html" %}
+{% block title %}Comparison {% endblock %}
+{% block main %}
+	<div class = "container">
+		<div class="card bg-secondary">
+			<div class = "card-header">Comparison of all graphs.</div>
+			<div class = "card-body container">
+				<div class = "row">
+					{% for other in cols %}
+						<div class = "col-md-6">
+							{% for each in other %}
+								<div class="card bg-dark my-3">
+									<div class = "card-body">
+										<div class="card-header">{{each.title}}</div>
+										<a href = "/plot/{{each.name}}">
+											<img
+												src = {{url_for("static", filename = each.img)}}
+												alt = "{{each.title}}"
+												width = "100%"
+											/>
+										</a>
+									</div>
+								</div>
+							{% endfor %}
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

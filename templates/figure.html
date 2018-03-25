@@ -1,0 +1,13 @@
+{% extends "with_vizbar.html" %}
+{% block title %}{{figure.name}}{% endblock %}
+{% block column %}
+	<div class="card text-white bg-dark">
+		<div class="card-header">{{figure.title}}</div>
+		<div class="card-body">
+			<img
+				src = {{url_for("static", filename = figure.img)}}
+			/>
+			<p class = "card-text">{{figure.text}}</p>
+		</div>
+	</div>
+{% endblock %}

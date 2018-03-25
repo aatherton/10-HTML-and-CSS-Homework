@@ -1,0 +1,32 @@
+{% extends "global.html" %}
+{% block main %}
+	<div class="card bg-secondary">
+		<div class = "card-header"><i class="fab fa-python"></i></div>
+		<div class = "card-body container">
+			<div class="row">
+				<div class="col">
+					{% block column %}no content here {% endblock %}
+				</div>
+				<div class = "col-md-3 col-xs-auto">
+					<div class="card bg-dark">
+						<div class = "card-header">Visualizations</div>
+							<div class = "card-body">
+							{% for each in FIGLIST %}
+								<div class="card bg-secondary">
+									<div class="card-header">{{each.name}}</div>
+									<a href = "/plot/{{each.name}}">
+										<img
+											src = {{url_for("static", filename = each.img)}}
+											alt = "{{each.title}}"
+											width = "100%"
+										/>
+									</a>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
